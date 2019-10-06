@@ -1,0 +1,23 @@
+ <div class="container-fluid projectBox ">
+	<div class="row mh">
+		<div class="col col-xs-9 mh">
+			<div class="projectInfo">
+				<h2 class="projectTitle">FILL</h2>
+				<p class="projectDesc">FILL</p>
+			</div>
+			<div class="projectMeta ">
+				<div class="row">
+					<div class="col col-xs-3">
+						<p class="projectDate">FILL</p>
+					</div>
+					<div class="col col-xs-9">
+						<p class="projectTags">FILL</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col col-xs-3 mh">
+			<img class="projectIcon" src="res/icon.png" alt="">
+		</div>
+	</div>
+</div>

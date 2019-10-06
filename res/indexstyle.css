@@ -1,0 +1,35 @@
+/*Christopher Pence 2019*/
+html{height: 100%;}
+body{height: 100%;margin: 0;
+	background-color: lavender;
+}
+
+/*Mobile phones and some tablets */
+@media screen and (max-width: 768px){
+	#indexPage{width: 100%;}
+	#indexFooter{width: 100%;}
+}
+
+/*Some tablets, Laptops and desktop*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	#indexPage{width: 75%;}
+	#indexFooter{width: 100%;}
+}
+
+/*Larger screens*/
+@media screen and (min-width: 1200px){
+	#indexPage{width: 50%;}
+	#indexFooter{width: 100%;}
+}
+
+/*Div containing the page*/
+#indexPage{
+	height: 100%;
+	margin: auto;
+	background-color: white;
+}
+
+/*Header for the page*/
+#indexHeader{
+	text-align:center;
+}

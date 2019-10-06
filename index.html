@@ -1,0 +1,64 @@
+<!-- Christopher Pence 2019 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Browser tab information (title and icon) -->
+    <title>Christopher Pence - Projects</title>
+    <link rel="shortcut icon" href="res/icon.png">
+    <!-- HTML meta information -->
+    <meta charset="utf-8">
+    <meta name="author" content="Christopher Pence">
+    <meta name="description" content="Projects made by Christopher Pence">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheet and bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="res/mainstyle.css">
+    <link rel="stylesheet" type="text/css" href="res/projectstyle.css">
+ </head>
+ <body>
+    <!-- Modal to display more information about the project -->
+    <div class="modal fade" role="dialog" id="mainModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title" ><a id="modalTitle" href="projects/SudokuWorld/index.html"></a></h3>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <button id="modalLink" class="btn btn-default float-right">Visit the Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for the projects -->
+    <div class="container" id="projectPage">
+        <!-- Header and Breadcrumbs -->
+        <div id="projectPageHeader">
+            <h1>Christopher Pence</h1>
+            <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item-active" aria-current="page">Projects</li>
+                </ol>
+            </nav> -->
+            <div id="projectFilter">
+                <h4>Select one or multiple technologies below to filter the projects!</h4>
+                <form onchange="filter()" id="filterForm">
+                    <table id="filterTable"></table>
+                </form>
+            </div>
+        </div>
+        <!-- Projects are placed here -->
+        <div id="projectList"></div>
+    </div>
+    <!-- Footer -->
+    <footer>Christopher Pence <span id="fDate"></span> - <a href="#" data-toggle="tooltip" data-placement="top" title="This is the last time projects on this webpage were modified. (m/dd/yy)">Last Modified: <span id="lastModified"></span> (?)</a></footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/date.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,193 @@
+/*Christopher Pence 2019*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+html{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color:black;
+}
+
+h1{margin: 0;}
+h2{margin: 0;}
+h3{margin: 0;}
+h4{margin: 0;}
+h5{margin: 0;}
+h6{margin: 0;}
+
+
+/*===============================================================*/
+/*general formatting*/
+.oneLineText{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*match height*/
+.mh{
+	height: 100%;
+}
+
+/*===============================================================*/
+/*all pages*/
+
+#background{ /*Background img tag for the page, slightly blurred*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	filter: blur(2px);
+	z-index: 0;
+}
+
+#content_centered{ /*Center this div on the page horizontally and vertically*/
+	margin: 0 25% 0 25%;
+	width: 50%;
+	height: 75%;
+	position: absolute;
+	transform: translate(0%, 15%);
+	z-index: 9999;
+	background-color: white;
+	opacity: .75;
+}
+#content{
+	padding: none;
+	margin: auto;
+	margin-top: none;
+	background-color: lavender;
+	width: 75%;
+	height: 100%;
+}
+
+#pageTitle{ /*H1 tag for the page title*/
+	text-align:center;
+	color: black;
+	font-family: Arial Black;
+}
+
+#pageDesc{
+	margin-bottom: 20px;
+	font-family: Arial;
+	text-align: center;
+}
+
+/*Footer Styling, unordered list with mulitple inline list elements*/
+#footer{
+	padding: 0px;
+	width: 100%;
+	border-top: 2px solid black;
+	text-align: center; 
+	position: fixed;
+	bottom: 0;
+	color: black;
+	font-family: Arial;
+}
+#footer li{
+	margin-top: 1;
+	margin-left: 2em;
+	margin-right: 2em;
+	display: inline;
+}
+
+.home{
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: none;
+	background-color: transparent;
+	color: grey;
+	font-size: 1.4em;
+}
+.home:hover{
+	color: black;
+}
+
+footer{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 100%;
+}
+
+/*===============================================================*/
+/*home page*/
+
+#homeDesc{ /*p tag that contains a description about myself*/
+	width: 75%;
+	margin: auto; 
+	text-align:center;
+	font-size: 1.2em;
+	color: black;
+	font-family: Arial;
+}
+
+/*Table containing 2 rows and 3 columns each with a link*/
+#homeTable{ /*Table tags overall*/
+	margin: auto;
+	margin-top: 10%;
+	width: 75%;
+	text-align: center;
+	font-family: Arial Black;
+}
+#homeTable tr{ /*Each row in the table*/
+
+}
+#homeTable td{ /*Each table entry*/
+	padding: 2em;
+}
+#homeTable a{ /*The link in the table entry*/
+	padding: 1em;
+	text-decoration: none;
+	font-size: 1.4em;
+	color: black;
+}
+#homeTable a:hover{
+	color: gainsboro;
+}
+
+/*===============================================================*/
+
+
+
+
+
+
+
+/*===============================================================*/
+/*development*/
+.ms{
+	background-color: mistyrose;
+}
+.la{
+	background-color: lavender;
+}
+.ga{
+	background-color: gainsboro;
+}

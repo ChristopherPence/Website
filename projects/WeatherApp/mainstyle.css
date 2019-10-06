@@ -1,0 +1,162 @@
+/*General html dom css*/
+html{
+	height: 100%;
+	margin: 0px;
+}
+
+body{
+	margin: 0px;
+	height: 100%;
+	background-color: gold;
+}
+
+/*Classes used in multiple places to apply general css*/
+.half{
+	height: 50%;
+	display: block;
+}
+.full{
+	height: 100%;
+}
+.flex{
+	display: flex;
+}
+.center-box{
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 60%;
+}
+/*Overlay css*/
+.overlayPopup{
+	background-color: crimson;
+	position: absolute;
+	overflow-y: auto; 
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	display: none;
+	z-index: 2000;
+	border-style: outset;
+	border-color: crimson;
+}
+.overlayPopup p{
+	margin: 10px;
+}
+.overlayPopup h3{
+	margin-left: 10px;
+}
+#overlayClose{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: none;
+	z-index: 2000;
+	margin: 0px;
+}
+#overlayClose:hover{
+	cursor: pointer;
+}
+
+/*Alert banner css*/
+#alert-banner{
+	display: none;
+	position: fixed;
+	top: 0px;
+	height: 32px;
+	width: 100% ;
+	background-color: crimson;
+	margin: 0px;
+	z-index: 2000;
+}
+#alert-banner:hover{
+	cursor: pointer;
+}
+#alert{
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+/*css for the current weather conditions*/
+#current-icon{/*canvas containing skycon*/
+	display: inline-block;
+	height: 128px;
+	width: 128px;
+}
+#current-summary{/*p tag containing summary of the weather*/
+	flex: auto;
+	float: right;
+	margin-top: 32px;
+	height: 64px;
+	margin-left: 20px;
+	font-family: Arial Black;
+}
+#current-condition{/*p tag containing current weather state*/
+	display: inline block;
+	width: 128px;
+	text-align:center;
+	font-family: Arial Black;
+}
+#current-temperature{/*p tag containing summary of the temperature*/
+	bottom: 20%;
+	position: fixed;
+}
+.icon-desc{
+	display: inline-block;
+	width: 128px;
+	margin: 0px;
+}
+
+/*Css for the forecast on the bottom of the page*/
+#forecast{
+	/*background-color: cornsilk;*/
+	width: 80%;
+	margin: auto;
+	padding: 0;
+	border-left: 2px solid black;
+}
+.forecast-box{
+	margin: 0;
+	padding: 0;
+	width: 19%;
+	display: inline-block;
+	border-right: 2px solid black;
+}
+.f-canvas{
+	width: 128px;
+	height: 128px;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.forecast-box p{
+	text-align: center;
+	margin-bottom: 0em;
+}
+.forecast-box h3{
+	text-align: center;
+}
+.grouptext{
+	margin-top: 1em;
+}
+/*p tag with the last time of update*/
+#lastUpdate{
+	margin-right:1em;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#greeting{
+	color: purple;
+	font-family: Arial Black;
+}
+#clock{
+	font-family: Arial Black;
+}
+#day{
+
+}

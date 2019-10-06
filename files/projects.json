@@ -1,0 +1,129 @@
+{
+	"lastModified" : "10/6/2019",
+	"projectData" : [
+		{
+			"title": "REC - RPI Event Calendar",
+			"desc": "A website that centralized event information from multiple sources on campus and allowed user to quickly find events they wanted.",
+			"date": "Spring 2019",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/RECIcon1.png",
+			"link": "https://github.com/ChristopherPence/REC",
+			"tags": ["NodeJS", "MongoDB", "ExpressJS", "AngularJS", "JavaScript", "HTML", "CSS"],
+			"modalContent": [
+				{
+					"header": "What I did",
+					"body": "For this project I wrote most of the NodeJS backend. This included our API. I helped with part of our MongoDB database and the interactions between it and NodeJS. Finally, I wrote our photo uploading tool and chose our integration with Cloudinary for long term photo storage."
+				}
+			]
+		},
+		{
+			"title": "Weather App",
+			"desc": "A simple and minimalistic weather app designed for desktop and laptop web browsers. Completed for the class Web Science Systems Development at RPI.",
+			"date": "Spring 2019",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/weatherAppIcon.PNG",
+			"link": "projects/WeatherApp/index.html",
+			"tags": ["JavaScript","HTML", "CSS", "Bootstrap", "jQuery"],
+			"modalContent": [
+				{
+					"header": "About",
+					"body": "My task was to use a weather API to create a responsive weather app. I designed mine specifically with the mindset that users could set this as their browser's homepage and get all of the useful information they need for their day from it."
+				},
+				{
+					"header": "API Calls",
+					"body": "Since I only have a static website and it is impossible to protect my private API keys I had to disable the feature that makes the API call. I also used two other API’s to attempt to get the users location if they block their browser’s geolocation. Since these don’t require secure keys, they are left in but commented out. The final API used is Skycons which are the animated icons used to display the weather condition. Those are left active and filled with filler conditions."
+				},
+				{
+					"header": "Credit",
+					"body": "I used bootstrap and as previously mentioned the Skycons API."
+				}
+			]
+		},
+		{
+			"title": "RPI Campus Map",
+			"desc": "An interactive campus map that allows users to search locations on campus and view the location on the map.",
+			"date": "Fall 2018",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/RPICampusMapIcon.PNG",
+			"link": "https://github.com/gaskij/rpicampusmap",
+			"tags": ["PHP", "MySQL","JavaScript", "HTML", "CSS"],
+			"modalContent": [
+				{
+					"header": "About",
+					"body": "This was my term project for the class ITWS-2110. We were asked to create a website that made use of many web technologies and that solved a problem. I completed this project with a group of two other students."
+				},
+				{
+					"header": "Problem",
+					"body": "As RPI students and former freshman, we understand the struggle that is finding buildings on campus. Current campus maps are outdated or static, and are not very easy to use. From this we realized that there is a demand for a more interactive map that makes it easier to find and learn about locations on campus."
+				},
+				{
+					"header": "Solution",
+					"body": "Our solution to this problem was to create an interactive campus map that allows users to search locations on campus and show the location on the map. The map is based on the open source Leaflet API, making it low maintenance and free, and easy for future developers to work on. The site also allows users to search by abbreviation or nickname, making it easier for users who are unfamiliar to campus lingo to find locations."
+				}
+			]
+		},
+		{
+			"title": "Study Connect",
+			"desc": "A website that would allow students to quickly form study groups with classmates or join large study sessions to prepare for tests.",
+			"date": "Spring 2018",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/StudyConnectIcon.PNG",
+			"link": "https://github.com/nataleeryan/StudyConnectITWS",
+			"tags": ["HTML", "CSS", "JavaScript"],
+			"modalContent": [
+				{
+					"header": "The Problem Statement",
+					"body": "A lot of RPI students have trouble meeting other students in their classes. Even if they wish they could find more people to study with, they will opt to studying with a very close friend group, or nobody at all. We believe that it is necessary to reduce the difficulty for students to meet up on campus for studying."
+				}
+			]
+		},
+		{
+			"title": "Sudoku World",
+			"desc": "Built a website that was meant to be paired with a Java sudoku solving program. It displays the history of sudoku, how to play and a link to download the program.",
+			"date": "Spring 2016",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/SudokuWorldIcon.PNG",
+			"link": "projects/SudokuWorld/index.html",
+			"tags": ["HTML", "CSS"],
+			"modalContent": [
+				{
+					"header": "About",
+					"body": "We were tasked with writing a Java program for our Java capstone project in Intro to Computer Programming in High School. I wrote a sudoku solving algorithm with a nice little Java GUI. The website was made to advertise the software and allow people to read about the history and rules of sudoku."
+				},
+				{
+					"header": "Notes",
+					"body": "I removed the Java program from the website so the link to download it will not work."
+				},
+				{
+					"header": "Credit",
+					"body": "I used WowSlider to create a nice image slider for this website."
+				},
+				{
+					"header": "Images",
+					"body": "Almost all of the images were created by me using photoshop or Gimp photo editor. Email me if I used your image and you would like me to take it down."
+				}
+			]
+		},
+		{
+			"title": "Christopher Air",
+			"desc": "Built a website for my fictitious airline \"Christopher Air\". This was completed as my capstone project for Intro to Computer Programming in High School.",
+			"date": "Fall 2015",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/ChristopherAirIcon.PNG",
+			"link": "projects/ChristopherAir/index.html",
+			"tags": ["HTML", "CSS", "Bootstrap"],
+			"modalContent": [
+				{
+					"header": "Notes",
+					"body": "It has been a while since this project was completed so some parts of the website may not be working as intended."
+				},
+				{
+					"header": "About",
+					"body": "We were tasked with building any website we desired as long as it met the technical requirements given to us. It could be a website for a real world application or a fake one. I went with an website for my fake airline \"Christopher Air\"."
+				},
+				{
+					"header": "Credit",
+					"body": "Used bootstrap and WowSlider to create a responsive website with an awesome image slider. I also used the FlightRadar24 API to embed a “live” feed of Christopher Air planes flying."
+				},
+				{
+					"header": "Images",
+					"body": "Except for the logo, all of the images I used were taken from the internet. I no longer have access to the original source. Email me if I used your image and you would like me to take it down."
+				}
+			]
+		}
+	]
+}

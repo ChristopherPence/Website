@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather For You</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<link rel="icon" href="https://cdn3.iconfinder.com/data/icons/weather-and-forecast/51/Weather_icons_grey-03-512.png" type="image/png"/>
+</head>
+<body>
+	<div id="alert-banner" onclick="overlayOpen();">
+		<h3 id="alert">Weather warnings will be listed in this area.</h3>
+	</div>
+	<div id="alert-box" class="overlayPopup">
+	</div>
+	<h1 id="overlayClose">&#128473</h1>
+
+	<div class="container-fluid half">
+		<div class="row full">
+			<div class="col-sm-6 full">
+				<div class="center-box">
+					<h1 id="greeting"></h1>
+					<h3 id="clock"></h3>
+					<h4 id="day"></h4>
+				</div>
+			</div>
+			<div class="col-sm-6 full">
+				<div class="center-box">
+					<div class="half">
+						<div class="flex">
+							<div class="icon-desc">
+								<canvas id="current-icon" height="128" width="128"></canvas>
+								<p id="current-condition">We think it's sunny...</p>
+							</div>
+							<h3 id="current-summary">Loading Weather Data...</h3>
+						</div>
+						
+					</div> 
+					<div class="half">
+						<p id="current-temperature"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid half">
+		<div id="forecast" class="row">
+			<div id="f-1" class="forecast-box">
+				<h3 id="f-1-date">Loading...</h3>
+				<div class="f-canvas">
+					<canvas id="f-1-icon" height="128" width="128"></canvas>
+				</div>
+				<p id="f-1-precipType">It might be sunny...</p>
+				<p id="f-1-tempHigh" class="grouptext"></p>
+				<p id="f-1-tempLow"></p>
+			</div>
+			<div id="f-2" class="forecast-box">
+				<h3 id="f-2-date">Loading...</h3>
+				<div class="f-canvas">
+					<canvas id="f-2-icon" height="128" width="128"></canvas>
+				</div>				
+				<p id="f-2-precipType">It might be sunny...</p>
+				<p id="f-2-tempHigh" class="grouptext"></p>
+				<p id="f-2-tempLow"></p>
+			</div>
+			<div id="f-3" class="forecast-box">
+				<h3 id="f-3-date">Loading...</h3>
+				<div class="f-canvas">
+					<canvas id="f-3-icon" height="128" width="128"></canvas>
+				</div>
+				<p id="f-3-precipType">It might be sunny...</p>
+				<p id="f-3-tempHigh" class="grouptext"></p>
+				<p id="f-3-tempLow"></p>
+			</div>
+			<div id="f-4" class="forecast-box">
+				<h3 id="f-4-date">Loading...</h3>
+				<div class="f-canvas">
+					<canvas id="f-4-icon" height="128" width="128"></canvas>
+				</div>
+				<p id="f-4-precipType">It might be sunny...</p>
+				<p id="f-4-tempHigh" class="grouptext"></p>
+				<p id="f-4-tempLow"></p>
+			</div>
+			<div id="f-5" class="forecast-box">
+				<h3 id="f-5-date">Loading...</h3>
+				<div class="f-canvas">
+					<canvas id="f-5-icon" height="128" width="128"></canvas>
+				</div>
+				<p id="f-5-precipType">It might be sunny...</p>
+				<p id="f-5-tempHigh" class="grouptext"></p>
+				<p id="f-5-tempLow"></p>
+			</div>
+		</div>
+	</div>
+	<p id="lastUpdate">Currently loading weather!</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="skycons-min.js"></script>
+	<script type="text/javascript" src="loadWeather.js"></script>
+</body>
+</html>

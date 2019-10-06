@@ -1,0 +1,139 @@
+/*Christopher Pence 2019*/
+
+/*Mobile phones and some tablets */
+@media screen and (max-width: 768px){
+	#projectPage{
+		width:90%;
+	}
+	.projectBox{
+		height: 100px;
+		box-shadow: 3px 3px 3px gainsboro, -1px 1px 3px gainsboro;
+		margin-bottom: 10px;
+	}
+	p{font-size: 1.2vmax;}
+	label{font-size: 2vmax;}
+	h2{font-size: 2vmax;}
+	h3{font-size: 2vmax;}
+	h4{font-size: 2vmax;}
+	label{font-size: 1.2vmax;}
+	input[type="checkbox"]{height: 1.5vmax;}
+}
+
+/*Some tablets, Laptops and desktop*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	#projectPage{
+		width:75%;
+	}
+	.projectBox{
+		height: 150px;
+		box-shadow: 2px 2px 2px gainsboro, -2px 2px 5px gainsboro;
+		margin-bottom: 15px;
+	}
+}
+
+/*Larger screens*/
+@media screen and (min-width: 1200px){
+	#projectPage{
+		width: 50%;
+	}
+	.projectBox{
+		height: 150px;
+		box-shadow: 2px 2px 2px gainsboro, -2px 2px 5px gainsboro;
+		margin-bottom: 15px;
+	}
+}
+
+/*add spacing between input and label*/
+label{
+	margin-left: 5px;
+}
+
+/*Container for all of the projects*/
+#projectPage{
+	padding: 0;
+}
+
+/*Page header, contains title and breadcrumbs*/
+#projectPageHeader{
+	width: 100%;
+	box-shadow: 5px 5px 5px gainsboro, -2px 2px 5px gainsboro;
+	margin-bottom: 20px;
+	background-color: ;
+}
+#projectPageHeader h1{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#projectPageHeader nav{
+	display: inline-block;
+	margin: 0;
+}
+#projectPageHeader ol{
+	background-color: white;
+	margin: 0;
+}
+
+/*Filter for the project tags, contains form and checkboxes*/
+#projectFilter{
+	margin-top: 6px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#filterTable{
+	border-spacing: 10px 0px;
+	border-collapse: separate;
+	margin-top: 5px;
+}
+
+/*Box containing each project*/
+.projectBox{
+	width: 100%;
+	padding: 0;	
+	background-color: white;
+}
+.projectBox:hover{box-shadow: 5px 5px 5px gainsboro, -3px 3px 5px gainsboro;}
+.projectBox *{padding: 0; margin: 0;}
+
+/*Project icon photo*/
+.projectIcon{
+	max-height: 100%;
+	max-width: 100%;
+	float: right;
+	border: 5px solid transparent;
+}
+
+/*div with title and description*/
+.projectInfo{
+	height: 80%;
+	overflow: hidden;
+}
+.projectTitle{
+	margin: 5px 5px 5px 5px;
+}
+.projectDesc{
+	margin: 5px 0 0 5px;
+}
+
+/*div with date and tags*/
+.projectMeta{
+	height: 20%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.projectDate, .projectTags{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*Used in the global modal for the page*/
+#modalTitle{
+	font-family: Arial Black;
+}
+#modalBody h4{
+	font-family: Arial Black;
+}
+#modalBody p{
+	font-family: Arial;
+}
