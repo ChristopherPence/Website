@@ -41,7 +41,7 @@
 			"title": "RPI Campus Map",
 			"desc": "An interactive campus map that allows users to search locations on campus and view the location on the map.",
 			"date": "Fall 2018",
-			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/RPICampusMapIcon.PNG",
+			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/RPICampusMapIcon.png",
 			"link": "https://github.com/gaskij/rpicampusmap",
 			"tags": ["PHP", "MySQL","JavaScript", "HTML", "CSS"],
 			"modalContent": [
