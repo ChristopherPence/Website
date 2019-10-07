@@ -3,7 +3,7 @@
 	"projectData" : [
 		{
 			"title": "REC - RPI Event Calendar",
-			"desc": "A website that centralized event information from multiple sources on campus and allowed user to quickly find events they wanted.",
+			"desc": "A website that centralized event information from multiple sources on campus and allowed users to quickly find events they wanted.",
 			"date": "Spring 2019",
 			"icon": "https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/RECIcon1.png",
 			"link": "https://github.com/ChristopherPence/REC",
