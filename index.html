@@ -1,64 +1,375 @@
-<!-- Christopher Pence 2019 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Browser tab information (title and icon) -->
-    <title>Christopher Pence - Projects</title>
-    <link rel="shortcut icon" href="res/icon.png">
-    <!-- HTML meta information -->
-    <meta charset="utf-8">
-    <meta name="author" content="Christopher Pence">
-    <meta name="description" content="Projects made by Christopher Pence">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Stylesheet and bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="res/mainstyle.css">
-    <link rel="stylesheet" type="text/css" href="res/projectstyle.css">
- </head>
- <body>
-    <!-- Modal to display more information about the project -->
-    <div class="modal fade" role="dialog" id="mainModal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title" ><a id="modalTitle" href="projects/SudokuWorld/index.html"></a></h3>
-                </div>
-                <div class="modal-body" id="modalBody"></div>
-                <div class="modal-footer">
-                    <button id="modalLink" class="btn btn-default float-right">Visit the Project</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Container for the projects -->
-    <div class="container" id="projectPage">
-        <!-- Header and Breadcrumbs -->
-        <div id="projectPageHeader">
-            <h1>Christopher Pence</h1>
-            <!-- <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item-active" aria-current="page">Projects</li>
-                </ol>
-            </nav> -->
-            <div id="projectFilter">
-                <h4>Select one or multiple technologies below to filter the projects!</h4>
-                <form onchange="filter()" id="filterForm">
-                    <table id="filterTable"></table>
-                </form>
-            </div>
-        </div>
-        <!-- Projects are placed here -->
-        <div id="projectList"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Christopher Pence's Homepage">
+  <meta name="author" content="Christopher Pence">
+  <link rel="shortcut icon" href="static/res/icon.png">
+
+  <title>Christopher Pence</title>
+
+  <link href="static/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="static/css/freelancer.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Christopher Pence</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Footer -->
-    <footer>Christopher Pence <span id="fDate"></span> - <a href="#" data-toggle="tooltip" data-placement="top" title="This is the last time projects on this webpage were modified. (m/dd/yy)">Last Modified: <span id="lastModified"></span> (?)</a></footer>
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="scripts/project.js"></script>
-    <script src="scripts/date.js"></script>
- </body>
- </html>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="static/res/chris2.png" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">Christopher Pence</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class='fas fa-code'></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Software Engineer / Web Developer</p>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Example project icon -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <h3 class="portfolio-item-label">Christopher Air</h3>
+        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid portfolio-img" src="" alt="">
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="lead" style="text-align: center;">Select one or multiple technologies below to filter my projects!</p>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid Items and filter -->
+      <div class="row">
+        <div class="col-lg-12">
+          <form onchange="filter()" id="filterForm">
+            <table id="filterTable"></table>
+          </form>
+        </div>
+      </div>
+      <div class="row" id="projectList"></div>
+      <div class="row">
+        <small>Last Modified: <span id="lastModified"></span></small>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="education">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Education</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="lead" style="text-align: center;">I'm currently earning dual bachelor's degrees in <b class="highlight">Computer Science (CS)</b> and <b class="highlight">Information Technology & Web Science (ITWS)</b> at Rensselaer Polytechnic Institute.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">CS is your typical idea of a programmer's education. We learn about algorithms, software design and good coding practices.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">ITWS takes your well written code and teaches the skills to turn it into <b class="highlight">real business value.</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- experience Section -->
+  <section class="page-section mb-0" id="experience">
+    <div class="container">
+
+      <!-- experience Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary">Work Experience</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-dark">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- experience Section Content -->
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="lead" style="text-align: center;">This fall I worked at <b class="highlight">Datto</b>, a business continuity and backup company, as a <b class="highlight">Cloud Engineering intern</b>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">I was entrusted to fix and deploy <b class="highlight">thousands of Ubuntu Linux servers.</b></p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">I also developed tools in <b class="highlight">Python</b> that automated mundane work and let us focus on more important projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section class="page-section text-white bg-primary" id="resume">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Resume</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="lead" style="text-align: center;">View my full resume by connecting with me on <a class="highlight" href="https://www.linkedin.com/in/christopher-pence-09">Linkedin</a>. You can see a limited version here.</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="static/documents/ChrisPence-Resume-WEBVERSION-Feb2020.pdf" target="_blank">
+              <i class="fas fa-file"></i>
+              View Resume
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase mb-0">Contact Me</h2> <!-- text-secondary -->
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-dark">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="lead" style="text-align: center;">Click the button to get in touch! <a style="color:var(--secondary-bg-color);" href="#social-media">Social media</a> platforms below, just keep scrolling.</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-dark" href="/contact" target="_blank">
+              <i class="fas fa-envelope-open-text"></i>
+              Contact Form
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Greater New York City Area
+            <br>United States</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0" id="social-media">
+          <h4 class="text-uppercase mb-4">Social Media</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ChristopherPence">
+            <i class="fab fa-fw fa-github"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/christopher-pence-09">
+            <i class="fab fa-fw fa-linkedin"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://fighting-game.herokuapp.com/">
+            <i class="fas fa-fw fa-gamepad"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="/development">
+            <i class="fab fa-fw fa-dev"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">Fun Fact</h4>
+          <p class="lead mb-0" id="random-fact">I collect playing cards.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright/Privacy Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Christopher Pence <span id="fDate"></span></small>
+      <small>&nbsp;</small>
+      <small><a href="/privacy"><i class="fas fa-user-shield"></i>Privacy Policy</a></small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div id="modalContainer"></div>
+
+  <!-- <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="portfolioModal0Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">RPI Event Calendar</h2>
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <p>Spring 2019</p>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <img class="img-fluid rounded mb-5" src="https://raw.githubusercontent.com/ChristopherPence/Website/master/res/images/RECIcon1.png" alt="IMAGE DESC">
+                <h4>Technologies Used</h4>
+                <p class="mb-5">TECH USED</p>
+                <h4>SECTIONS</h4>
+                <p class="mb-5">TEXT</p>
+                <button class="btn btn-primary" href="PROJECTLINK">
+                  <i class="fas fa-external-link-alt"></i>
+                  Visit Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/jquery/jquery.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="static/jquery/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="static/scripts/freelancer.min.js"></script>
+
+  <!-- Custom scripts by Chris Pence -->
+  <script src="static/scripts/date.js"></script>
+  <script src="static/scripts/project.js"></script>
+
+</body>
+</html>
